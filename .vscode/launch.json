@@ -1,0 +1,37 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Flask (run.py)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/run.py",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "FLASK_APP": "app.py", // Though run.py starts it, good for context
+                "FLASK_ENV": "development", // Or "production"
+                "PYTHONUNBUFFERED": "1"
+            },
+            "console": "integratedTerminal",
+            "justMyCode": true, // Set to false to debug into external libraries
+            "stopOnEntry": false
+        },
+        {
+            "name": "Python: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "Python: Initialize Config",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/init_config.py",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        }
+    ]
+}

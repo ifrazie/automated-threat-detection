@@ -3,8 +3,9 @@ import json
 import logging
 
 def initialize_directories_and_configs():
-    """Create necessary directories and default configuration files if they don't exist."""
-    
+    """Create necessary directories and default configuration files 
+    if they don't exist.
+    """
     # Create necessary directories
     directories = ['logs', 'config']
     for directory in directories:
